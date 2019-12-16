@@ -1,0 +1,173 @@
+<!DOKTYPE html>
+<html>
+<title>cub</title>
+<meta>
+<style type="text/css">
+    .wrapper {
+        margin-top: 250px;
+        perspective: 700px;
+        perspective-origin: center center;
+    }
+    .cub {
+        position: relative;
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        transform-style: preserve-3d;
+        animation: cubbic 12s infinite linear;
+    }
+    .cub > div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+    }
+    .cub > div > .drop {
+        position: absolute;
+        top:120px;
+        left:120px;
+        height: 60px;
+        filter: opacity(100%) drop-shadow(0 0 5px white);
+        width: 60px;
+    }
+    .size1 {
+        background: red;
+        border-radius: 55px;
+        transform: translateZ(150px);
+        animation: size1 10s alternate infinite cubic-bezier(0.1,0.7,1,1);;
+    }
+    .size2 {
+        background: lawngreen;
+        border-radius: 55px;
+        transform: translateZ(-150px) rotateY(180deg);
+        animation: size2 10s infinite cubic-bezier(0.1,0.7,1,1);;
+    }
+    .size3 {
+        background: blueviolet;
+        border-radius: 55px;
+        transform: rotateY(-270deg) translateX(150px);
+        transform-origin: top right;
+        animation: size3 10s infinite cubic-bezier(0.1,0.7,1,1);;
+    }
+    .size4 {
+        background: orange;
+        border-radius: 55px;
+        transform: rotateY(270deg) translateX(-150px);
+        transform-origin: center left;
+        animation: size4 10s infinite cubic-bezier(0.1,0.7,1,1);;
+    }
+    .size5 {
+        background: pink;
+        border-radius: 55px;
+        transform: rotateX(-270deg) translateY(-150px);
+        transform-origin: top center;
+        animation: size5 10s infinite cubic-bezier(0.1,0.7,1,1);;
+    }
+    .size6 {
+        background: aqua;
+        border-radius: 55px;
+        transform: rotateX(270deg) translateY(150px);
+        transform-origin: bottom center;
+        animation: size6 10s infinite cubic-bezier(0.1,0.7,1,1);;
+    }
+    .drop{
+        background:#ffffff;
+        border:3px solid white;
+        border-radius: 50%;
+        position: absolute;
+    }
+    @keyframes cubbic {
+        from {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        to {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+    @keyframes size1 {
+        from{
+            background: red;
+        }
+        50%{
+            background: lawngreen;
+        }
+        to{
+            background: red;
+        }
+    }
+    @keyframes size2 {
+        from{
+            background: lawngreen;
+        }
+       50%{background:blueviolet ;
+        }
+        to{
+            background: lawngreen;
+        }
+    }
+    @keyframes size3 {
+        from{
+            background: blueviolet;
+        }
+        50%{background:orange ;
+        }
+        to{
+            background: blueviolet;
+        }
+    }
+    @keyframes size4 {
+        from{
+            background: orange;
+        }
+        50%{background:pink ;
+        }
+        to{
+            background: orange;
+        }
+    }
+    @keyframes size5 {
+        from{
+            background: pink;
+        }
+        50%{background:aqua ;
+        }
+        to{
+            background: pink;
+        }
+    }
+    @keyframes size6 {
+        from{
+            background: aqua;
+        }
+        50%{background:red ;
+        }
+        to{
+            background:aqua;
+        }
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="cub">
+        <div class="size1">
+            <div class="drop"></div>
+        </div>
+        <div class="size2">
+            <div class="drop"></div>
+        </div>
+        <div class="size3">
+            <div class="drop"></div>
+        </div>
+        <div class="size4">
+            <div class="drop"></div>
+        </div>
+        <div class="size5">
+            <div class="drop"></div>
+        </div>
+        <div class="size6">
+            <div class="drop"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
