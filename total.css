@@ -1,0 +1,95 @@
+.playmentwrap{
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow:3px 5px 10px #90a0ba;
+}
+.playtext{
+    width: 685px;
+    height: 40px;
+    background: #919ec0;
+    color:white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.playchek{
+    width: 685px;
+    height: 60px;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: #919ec0;
+}
+.card{
+    width: 350px;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.cardbutton{
+    width: 20px;
+    height: 20px;
+}
+.textarea{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: space-between;
+    font-family: Montserrat;
+}
+.pustoy{
+    width: 700px;
+    height: 100px
+}
+.textlabel{
+    font-weight: 800;
+    font-size: 0.9em;
+    color: #2f405c;
+}
+.chekk{
+    width: 700px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#sem + label {
+    position: relative;
+}
+#sem + label button {
+    position: relative;
+}
+.linearea{
+    width: 700px;
+    height: 3px;
+    background:#ecf0f3 ;
+}
+#textarea{
+    border: 2px solid #ecf0f3;
+}
+.labeltext{
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #909fbc;
+}
+.areabutton{
+    width: 700px;
+    height: 30px;
+    font-weight: 0.8em;
+    color: white;
+    background: #ce453d;
+    border: 0;
+}

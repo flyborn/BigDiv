@@ -1,0 +1,114 @@
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    z-index: 20;
+    justify-content: center;
+    background: #edeef2;
+}
+.footerwrap{
+    width: 1100px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+}
+.slideblock{
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    position:absolute;
+    left: 300px;
+    bottom: 22px;
+    z-index: 1;
+    transition: 2s;
+}
+.redstick{
+    width: 20px;
+    height: 50px;
+    background: #d44a3d;
+    position: absolute;
+    border-radius: 30px 30px 0 0;
+}
+.lisster{
+    width: 18px;
+    height: 18px;
+}
+.blocklisster{
+    position: absolute;
+    left: 20px;
+    bottom: 24px;
+    width: 150px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 10px;
+    font-family: Montserrat;
+    font-size: 0.6em;font-weight: 500;
+    background: #32405a;
+}
+.fotertext{
+    width: 500px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 90px;
+}
+.textlitle{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#30405a;
+}
+.textlitle1{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#30405a;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 0.5em;
+}
+.micro{
+    width: 2px;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #30405a;
+}
+.butfooter{
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 0.6em;
+}
+/*footer block and*/
+.socialblock{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    top: 1300px;
+    left: 1500px;
+    transform-origin: inherit;
+}
+.fixblock{
+    width: 35px;
+}
+footer:hover > .slideblock{
+    bottom: 90px;
+}
